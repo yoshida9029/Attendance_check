@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>勤怠アプリ</title>
+    <link rel="stylesheet" href="css/study.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+    <h1>勤怠管理アプリ</h1>
+
+    <div class="form">
+        <label>日付</label>
+        <input type="date" id="date">
+
+        <label>出勤</label>
+        <input type="time" id="start">
+
+        <label>退勤</label>
+        <input type="time" id="end">
+
+        <label>休憩（分）</label>
+        <input type="number" id="break" value="60">
+
+        <button id="calcBtn">計算＆保存</button>
+    </div>
+
+    <div class="result">
+        <p>勤務時間：<span id="hours">-</span> 時間</p>
+        <p>残業時間：<span id="overtime">-</span> 時間</p>
+        <p>深夜時間：<span id="night">-</span> 時間</p>
+        <p>給料：<span id="salary">-</span> 円</p>
+        <p class="error" id="error"></p>
+    </div>
+
+    <hr>
+
+    <h2>今月の合計</h2>
+    <p>勤務時間：<span id="totalHours">0</span> 時間</p>
+    <p>残業時間：<span id="totalOvertime">0</span> 時間</p>
+    <p>給料：<span id="totalSalary">0</span> 円</p>
+
+    <hr>
+
+    <h2>履歴</h2>
+    <ul id="history"></ul>
+    </div>
+
+</body>
+</html>

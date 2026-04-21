@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+  background: #f5f5f5;
+}
+
+.container {
+  width: 360px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 8px;
+}
+
+button {
+  padding: 10px;
+  background: #007BFF;
+  color: white;
+  border: none;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.error {
+  color: red;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #eee;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=study.css.map */
